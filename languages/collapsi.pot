@@ -1,0 +1,302 @@
+# Copyright (C) 2026 Moaz Mahmoud
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Collapsi for Gutenberg Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/collapsi-for-gutenberg\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-04T08:23:22+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: collapsi\n"
+
+#. Plugin Name of the plugin
+#: collapsi-for-gutenberg.php
+#: includes/class-admin-page.php:35
+#: build/settings.js:1
+#: src/settings/App.js:74
+msgid "Collapsi for Gutenberg Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: collapsi-for-gutenberg.php
+msgid "https://github.com/devMoaz/collapsi-for-gutenberg"
+msgstr ""
+
+#. Description of the plugin
+#: collapsi-for-gutenberg.php
+msgid "Editor-only collapse/expand toggle for every Gutenberg block. Hover a top-level block, click the chevron, and the block tucks into a compact bar with icon, title, and content preview. Survives reloads via localStorage. Works in Post Editor and Site Editor. No frontend impact."
+msgstr ""
+
+#. Author of the plugin
+#: collapsi-for-gutenberg.php
+msgid "Moaz Mahmoud"
+msgstr ""
+
+#. Author URI of the plugin
+#: collapsi-for-gutenberg.php
+msgid "https://www.linkedin.com/in/moazmahmmoud/"
+msgstr ""
+
+#: includes/class-admin-page.php:36
+#: build/editor.js:8
+#: src/editor/sidebar/CollapserSidebar.js:28
+msgid "Collapsi"
+msgstr ""
+
+#: build/editor.js:1
+#: src/editor/components/ErrorBoundary.js:29
+msgid "Collapsi caught a render error in this block."
+msgstr ""
+
+#: build/editor.js:1
+#: src/editor/components/CollapseButton.js:12
+msgid "Expand block"
+msgstr ""
+
+#: build/editor.js:1
+#: src/editor/components/CollapseButton.js:13
+msgid "Collapse block"
+msgstr ""
+
+#. translators: %d is the number of list items.
+#: build/editor.js:2
+#: src/editor/utils/previewText.js:105
+#, js-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d is the number of blocks inside a group.
+#: build/editor.js:3
+#: src/editor/utils/previewText.js:116
+#, js-format
+msgid "%d block"
+msgid_plural "%d blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d is the number of columns.
+#: build/editor.js:4
+#: src/editor/utils/previewText.js:127
+#, js-format
+msgid "%d column"
+msgid_plural "%d columns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/editor.js:4
+#: src/editor/components/CollapseBar.js:26
+msgid "Unknown block"
+msgstr ""
+
+#: build/editor.js:4
+#: build/editor.js:8
+#: src/editor/components/CollapseWrapper.js:96
+#: src/editor/sidebar/actions.js:114
+msgid "Block"
+msgstr ""
+
+#. translators: %s is the block name.
+#: build/editor.js:5
+#: src/editor/components/CollapseWrapper.js:123
+#, js-format
+msgid "%s collapsed."
+msgstr ""
+
+#. translators: %s is the block name.
+#: build/editor.js:6
+#: src/editor/components/CollapseWrapper.js:128
+#, js-format
+msgid "%s expanded."
+msgstr ""
+
+#: build/editor.js:6
+#: src/editor/components/BlockMenuEntry.js:73
+msgid "Allow collapsing this block"
+msgstr ""
+
+#: build/editor.js:6
+#: src/editor/components/BlockMenuEntry.js:74
+msgid "Never collapse this block"
+msgstr ""
+
+#. translators: %d is a count of blocks.
+#: build/editor.js:7
+#: src/editor/sidebar/actions.js:49
+#, js-format
+msgid "Collapsed %d block."
+msgid_plural "Collapsed %d blocks."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d is a count of blocks.
+#: build/editor.js:8
+#: src/editor/sidebar/actions.js:70
+#, js-format
+msgid "Expanded %d block."
+msgid_plural "Expanded %d blocks."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/editor.js:8
+#: src/editor/sidebar/CollapserSidebar.js:33
+msgid "Manage which top-level blocks are collapsed in this editor."
+msgstr ""
+
+#: build/editor.js:8
+#: src/editor/sidebar/CollapserSidebar.js:45
+msgid "Collapse All"
+msgstr ""
+
+#: build/editor.js:8
+#: src/editor/sidebar/CollapserSidebar.js:53
+msgid "Expand All"
+msgstr ""
+
+#. translators: %s is the block name.
+#: build/editor.js:9
+#: src/editor/sidebar/actions.js:118
+#, js-format
+msgid "Focus mode on. %s only."
+msgstr ""
+
+#: build/editor.js:9
+#: src/editor/sidebar/CollapserSidebar.js:56
+msgid "Focus Mode"
+msgstr ""
+
+#: build/editor.js:9
+#: src/editor/sidebar/CollapserSidebar.js:60
+msgid "Tip: Alt+Shift+C toggles all."
+msgstr ""
+
+#: build/editor.js:9
+#: src/editor/shortcuts/register.js:30
+msgid "Toggle collapse/expand all top-level blocks"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/GeneralTab.js:8
+msgid "Enable Collapsi"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/GeneralTab.js:9
+msgid "Master switch. When off, no chevrons appear and no collapse state is tracked."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/GeneralTab.js:18
+msgid "Show content preview in collapsed bar"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/GeneralTab.js:22
+msgid "Display a short summary (paragraph text, image alt, \"N blocks\", etc.) next to the block title when collapsed."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/GeneralTab.js:31
+msgid "Show block icon in collapsed bar"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/GeneralTab.js:32
+msgid "Display the block-type icon next to the title."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/BehaviourTab.js:8
+msgid "Auto-collapse all top-level blocks on editor load"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/BehaviourTab.js:12
+msgid "When enabled, every top-level block starts collapsed each time the editor opens. Per-instance \"Never collapse\" overrides still apply."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/BehaviourTab.js:25
+msgid "Tip: press Alt+Shift+C in the editor to toggle all top-level blocks. This shortcut cannot be customized in v1."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:14
+msgid "Accent color"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:15
+msgid "Left border and icon color on collapsed blocks."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:30
+msgid "Bar title color"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:31
+msgid "Block title text in the collapsed bar."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:47
+msgid "Live preview"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:57
+msgid "Heading"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/tabs/AppearanceTab.js:60
+msgid "— first chars of the collapsed block."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:12
+msgid "General"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:13
+msgid "Behaviour"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:14
+msgid "Appearance"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:34
+msgid "Failed to load settings."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:51
+msgid "Settings saved."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:56
+msgid "Save failed."
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:82
+msgid "Saving…"
+msgstr ""
+
+#: build/settings.js:1
+#: src/settings/App.js:83
+msgid "Save changes"
+msgstr ""

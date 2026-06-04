@@ -1,0 +1,27 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Build output (gitignored — built by CI for releases)
+/build
+/languages/*.json
+
+# Release artifacts (built locally, uploaded to wp.org)
+/dist
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Test artifacts
+/coverage
+/.phpunit.cache
+/phpunit.xml
+/test-results
+/playwright-report
+
+# Local config
+.env
+.env.local

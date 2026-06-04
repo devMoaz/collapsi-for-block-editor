@@ -1,0 +1,24 @@
+{
+  "extends": ["plugin:@wordpress/eslint-plugin/recommended"],
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["tests/**/*.js", "tests/**/*.jsx"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "jsdoc/check-tag-names": ["error", { "definedTags": ["jest-environment"] }]
+      }
+    }
+  ]
+}

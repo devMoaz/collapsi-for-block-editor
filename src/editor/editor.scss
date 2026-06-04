@@ -1,0 +1,160 @@
+/**
+ * Collapsi — editor-only styles.
+ * Loaded via enqueue_block_editor_assets so they inject into the
+ * iframed editor.
+ */
+
+.collapsi-wrapper {
+	position: relative;
+
+	.collapsi-toggle-host {
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		z-index: 30;
+		opacity: 0;
+		transition: opacity 120ms ease-in-out;
+		pointer-events: none;
+	}
+
+	&:hover .collapsi-toggle-host,
+	&:focus-within .collapsi-toggle-host {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	&.is-collapsed {
+
+		/* Hide the wrapped BlockListBlock subtree; keep our wrapper visible. */
+		> .collapsi-content {
+			display: none;
+		}
+
+		min-height: 40px;
+		padding: 8px 8px 8px 36px;
+		border-left: 3px solid var(--collapsi-accent, #1d9e75);
+		background: rgba(29, 158, 117, 0.05);
+		border-radius: 2px;
+
+		.collapsi-toggle-host {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+}
+
+.collapsi-toggle {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.collapsi-bar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 100%;
+	min-height: 40px;
+	color: var(--collapsi-bar-text, #444);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.4;
+	pointer-events: none;
+	animation: collapsi-bar-fade-in 150ms ease-in-out;
+
+	.collapsi-bar__icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 auto;
+		width: 20px;
+		height: 20px;
+		color: var(--collapsi-accent, #1d9e75);
+
+		svg {
+			width: 18px;
+			height: 18px;
+			fill: currentcolor;
+		}
+	}
+
+	.collapsi-bar__title {
+		display: inline-block;
+		flex: 0 0 auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.collapsi-bar__preview {
+		display: inline-block;
+		flex: 1 1 auto;
+		overflow: hidden;
+		min-width: 0;
+		color: inherit;
+		font-weight: 400;
+		opacity: 0.7;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+
+		&::before {
+			margin: 0 6px;
+			content: "—";
+			opacity: 0.5;
+		}
+	}
+}
+
+.collapsi-error {
+	padding: 8px 12px;
+	border-left: 3px solid #cc1818;
+	background: rgba(204, 24, 24, 0.06);
+	color: #8a0f0f;
+	font-size: 13px;
+}
+
+@keyframes collapsi-bar-fade-in {
+
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	.collapsi-wrapper .collapsi-toggle-host {
+		transition: none;
+	}
+
+	.collapsi-bar {
+		animation: none;
+	}
+}
+
+.collapsi-sidebar {
+	padding: 16px;
+
+	&__hint {
+		margin: 0 0 12px;
+		color: #555;
+		font-size: 12px;
+	}
+
+	&__actions {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__shortcut {
+		margin: 16px 0 0;
+		color: #888;
+		font-size: 11px;
+		font-style: italic;
+	}
+}

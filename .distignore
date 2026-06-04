@@ -1,0 +1,37 @@
+# Files and directories excluded from the production distribution zip.
+# Honored by Plugin Check, `wp dist-archive`, and our local zip script.
+# Mirrors `.gitattributes` export-ignore list; if you change one, change both.
+
+/.editorconfig
+/.eslintrc.json
+/.gitattributes
+/.github
+/.gitignore
+/.npmrc
+/.nvmrc
+/.prettierrc.json
+/.playwright-mcp
+
+/composer.json
+/composer.lock
+/jest.config.js
+/jest.setup.js
+/package-lock.json
+/phpcs.xml.dist
+/phpstan.neon
+/README.md
+/webpack.config.js
+
+/_playground
+/assets
+/dist
+/docs
+/node_modules
+/src
+/tests
+/vendor
+
+# Local screenshots and other build noise
+appearance-grid-preview.png
+*.zip
+block-collapser-block-collapser-php-*.md

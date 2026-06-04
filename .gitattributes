@@ -1,0 +1,29 @@
+# Files and directories excluded from `git archive` (used for wp.org SVN export).
+# End users get only the runtime files; dev tooling stays in the git repo.
+
+/.editorconfig         export-ignore
+/.eslintrc.json        export-ignore
+/.gitattributes        export-ignore
+/.github               export-ignore
+/.gitignore            export-ignore
+/.npmrc                export-ignore
+/.nvmrc                export-ignore
+/.prettierrc.json      export-ignore
+/README.md             export-ignore
+/composer.json         export-ignore
+/composer.lock         export-ignore
+/jest.config.js        export-ignore
+/jest.setup.js         export-ignore
+/package.json          export-ignore
+/package-lock.json     export-ignore
+/phpcs.xml.dist        export-ignore
+/phpstan.neon          export-ignore
+/webpack.config.js     export-ignore
+
+/_playground           export-ignore
+/assets                export-ignore
+/docs                  export-ignore
+/node_modules          export-ignore
+/src                   export-ignore
+/tests                 export-ignore
+/vendor                export-ignore

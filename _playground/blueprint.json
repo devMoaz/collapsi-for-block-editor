@@ -1,0 +1,33 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/wp-admin/edit.php",
+	"preferredVersions": {
+		"php": "8.2",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "login",
+			"username": "admin",
+			"password": "password"
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "collapsi-for-gutenberg"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/collapsi-demo-seed.php",
+			"data": "<?php\nadd_action('init', function () {\n    if (get_option('collapsi_demo_seeded')) {\n        return;\n    }\n    $post_id = wp_insert_post([\n        'post_title'   => 'Collapsi demo',\n        'post_content' => \"<!-- wp:heading -->\\n<h2 class=\\\"wp-block-heading\\\">Try collapsing me</h2>\\n<!-- /wp:heading -->\\n\\n<!-- wp:paragraph -->\\n<p>Hover any top-level block and click the chevron in the top-left corner to collapse it.</p>\\n<!-- /wp:paragraph -->\\n\\n<!-- wp:group -->\\n<div class=\\\"wp-block-group\\\"><!-- wp:paragraph -->\\n<p>This is a Group block with nested content. Only the outer container gets a chevron.</p>\\n<!-- /wp:paragraph -->\\n\\n<!-- wp:paragraph -->\\n<p>Try the keyboard shortcut Alt+Shift+C to toggle all blocks at once.</p>\\n<!-- /wp:paragraph --></div>\\n<!-- /wp:group -->\\n\\n<!-- wp:paragraph -->\\n<p>Visit Settings &rarr; Collapsi to change the accent color and behaviour.</p>\\n<!-- /wp:paragraph -->\",\n        'post_status'  => 'publish',\n        'post_type'    => 'post',\n    ]);\n    update_option('collapsi_demo_seeded', $post_id);\n});\n"
+		}
+	]
+}

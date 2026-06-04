@@ -1,0 +1,16 @@
+parameters:
+    level: 8
+    paths:
+        - collapsi-for-gutenberg.php
+        - includes
+        - uninstall.php
+    excludePaths:
+        - vendor
+        - node_modules
+        - build
+    bootstrapFiles:
+        - vendor/szepeviktor/phpstan-wordpress/bootstrap.php
+        - tests/phpstan-bootstrap.php
+
+includes:
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon

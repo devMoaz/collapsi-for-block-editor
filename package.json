@@ -1,0 +1,50 @@
+{
+  "name": "collapsi-for-gutenberg",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collapse any block in the Gutenberg editor canvas.",
+  "author": "Moaz Mahmoud",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format",
+    "lint:js": "wp-scripts lint-js",
+    "lint:css": "wp-scripts lint-style --allow-empty-input",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "test": "wp-scripts test-unit-js",
+    "test:e2e": "wp-scripts test-playwright",
+    "packages-update": "wp-scripts packages-update",
+    "makepot": "wp i18n make-pot . languages/collapsi.pot --slug=collapsi-for-gutenberg --domain=collapsi"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@wordpress/eslint-plugin": "^21.0.0",
+    "@wordpress/prettier-config": "^4.0.0",
+    "@wordpress/scripts": "^30.0.0",
+    "@wordpress/stylelint-config": "^23.0.0",
+    "ajv": "^8.17.1"
+  },
+  "dependencies": {
+    "@wordpress/api-fetch": "^7.0.0",
+    "@wordpress/components": "^29.0.0",
+    "@wordpress/compose": "^7.0.0",
+    "@wordpress/data": "^10.0.0",
+    "@wordpress/element": "^6.0.0",
+    "@wordpress/hooks": "^4.0.0",
+    "@wordpress/i18n": "^5.0.0",
+    "@wordpress/icons": "^10.0.0",
+    "@wordpress/keyboard-shortcuts": "^5.0.0",
+    "@wordpress/plugins": "^7.0.0"
+  },
+  "overrides": {
+    "eslint": {
+      "ajv": "^6.12.6"
+    },
+    "@eslint/eslintrc": {
+      "ajv": "^6.12.6"
+    }
+  }
+}
