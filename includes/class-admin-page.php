@@ -33,7 +33,7 @@ final class Admin_Page {
 	public function add_menu_page(): void {
 		add_options_page(
 			__( 'Collapsi for Gutenberg Blocks', 'collapsi-for-gutenberg' ),
-			__( 'collapsi-for-gutenberg', 'collapsi-for-gutenberg' ),
+			__( 'Collapsi', 'collapsi-for-gutenberg' ),
 			'manage_options',
 			self::SLUG,
 			array( $this, 'render_page' )
