@@ -9,8 +9,8 @@ import { __ } from '@wordpress/i18n';
 
 function CollapseButton( { isCollapsed, onToggle } ) {
 	const label = isCollapsed
-		? __( 'Expand block', 'collapsi' )
-		: __( 'Collapse block', 'collapsi' );
+		? __( 'Expand block', 'collapsi-for-gutenberg' )
+		: __( 'Collapse block', 'collapsi-for-gutenberg' );
 
 	return (
 		<Button

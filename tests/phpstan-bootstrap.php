@@ -9,6 +9,8 @@
 
 declare( strict_types=1 );
 
+defined( 'ABSPATH' ) || exit;
+
 defined( 'COLLAPSI_VERSION' ) || define( 'COLLAPSI_VERSION', '1.0.0' );
 defined( 'COLLAPSI_FILE' ) || define( 'COLLAPSI_FILE', dirname( __DIR__ ) . '/collapsi-for-gutenberg.php' );
 defined( 'COLLAPSI_DIR' ) || define( 'COLLAPSI_DIR', dirname( __DIR__ ) . '/' );

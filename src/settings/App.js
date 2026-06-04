@@ -9,9 +9,9 @@ import BehaviourTab from './tabs/BehaviourTab';
 import AppearanceTab from './tabs/AppearanceTab';
 
 const TABS = [
-	{ name: 'general', title: __( 'General', 'collapsi' ) },
-	{ name: 'behaviour', title: __( 'Behaviour', 'collapsi' ) },
-	{ name: 'appearance', title: __( 'Appearance', 'collapsi' ) },
+	{ name: 'general', title: __( 'General', 'collapsi-for-gutenberg' ) },
+	{ name: 'behaviour', title: __( 'Behaviour', 'collapsi-for-gutenberg' ) },
+	{ name: 'appearance', title: __( 'Appearance', 'collapsi-for-gutenberg' ) },
 ];
 
 function App() {
@@ -31,7 +31,10 @@ function App() {
 					status: 'error',
 					message:
 						err?.message ||
-						__( 'Failed to load settings.', 'collapsi' ),
+						__(
+							'Failed to load settings.',
+							'collapsi-for-gutenberg'
+						),
 				} );
 				setLoading( false );
 			} );
@@ -48,12 +51,14 @@ function App() {
 			setSettings( { ...DEFAULTS, ...saved } );
 			setNotice( {
 				status: 'success',
-				message: __( 'Settings saved.', 'collapsi' ),
+				message: __( 'Settings saved.', 'collapsi-for-gutenberg' ),
 			} );
 		} catch ( err ) {
 			setNotice( {
 				status: 'error',
-				message: err?.message || __( 'Save failed.', 'collapsi' ),
+				message:
+					err?.message ||
+					__( 'Save failed.', 'collapsi-for-gutenberg' ),
 			} );
 		} finally {
 			setSaving( false );
@@ -71,7 +76,12 @@ function App() {
 	return (
 		<div className="collapsi-settings">
 			<header className="collapsi-settings__header">
-				<h1>{ __( 'Collapsi for Gutenberg Blocks', 'collapsi' ) }</h1>
+				<h1>
+					{ __(
+						'Collapsi for Gutenberg Blocks',
+						'collapsi-for-gutenberg'
+					) }
+				</h1>
 				<Button
 					variant="primary"
 					isBusy={ saving }
@@ -79,8 +89,8 @@ function App() {
 					onClick={ onSave }
 				>
 					{ saving
-						? __( 'Saving…', 'collapsi' )
-						: __( 'Save changes', 'collapsi' ) }
+						? __( 'Saving…', 'collapsi-for-gutenberg' )
+						: __( 'Save changes', 'collapsi-for-gutenberg' ) }
 				</Button>
 			</header>
 			{ notice && (

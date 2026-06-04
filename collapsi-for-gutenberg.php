@@ -11,7 +11,7 @@
  * Author URI:        https://www.linkedin.com/in/moazmahmmoud/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       collapsi
+ * Text Domain:       collapsi-for-gutenberg
  * Domain Path:       /languages
  *
  * @package Collapsi

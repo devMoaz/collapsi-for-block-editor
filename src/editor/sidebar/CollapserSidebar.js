@@ -10,7 +10,7 @@ import { __ } from '@wordpress/i18n';
 import { chevronUp, chevronDown, group } from '@wordpress/icons';
 import { collapseAllTopLevel, expandAllTopLevel, focusMode } from './actions';
 
-const SIDEBAR_NAME = 'collapsi';
+const SIDEBAR_NAME = 'collapsi-for-gutenberg';
 
 function CollapserSidebar() {
 	const { topLevelCount } = useSelect( ( select ) => {
@@ -25,14 +25,14 @@ function CollapserSidebar() {
 	return (
 		<PluginSidebar
 			name={ SIDEBAR_NAME }
-			title={ __( 'Collapsi', 'collapsi' ) }
+			title={ __( 'collapsi-for-gutenberg', 'collapsi-for-gutenberg' ) }
 			icon={ group }
 		>
 			<div className="collapsi-sidebar">
 				<p className="collapsi-sidebar__hint">
 					{ __(
 						'Manage which top-level blocks are collapsed in this editor.',
-						'collapsi'
+						'collapsi-for-gutenberg'
 					) }
 				</p>
 				<div className="collapsi-sidebar__actions">
@@ -42,7 +42,7 @@ function CollapserSidebar() {
 						onClick={ onCollapseAll }
 						disabled={ topLevelCount === 0 }
 					>
-						{ __( 'Collapse All', 'collapsi' ) }
+						{ __( 'Collapse All', 'collapsi-for-gutenberg' ) }
 					</Button>
 					<Button
 						variant="secondary"
@@ -50,14 +50,17 @@ function CollapserSidebar() {
 						onClick={ onExpandAll }
 						disabled={ topLevelCount === 0 }
 					>
-						{ __( 'Expand All', 'collapsi' ) }
+						{ __( 'Expand All', 'collapsi-for-gutenberg' ) }
 					</Button>
 					<Button variant="tertiary" onClick={ onFocusMode }>
-						{ __( 'Focus Mode', 'collapsi' ) }
+						{ __( 'Focus Mode', 'collapsi-for-gutenberg' ) }
 					</Button>
 				</div>
 				<p className="collapsi-sidebar__shortcut">
-					{ __( 'Tip: Alt+Shift+C toggles all.', 'collapsi' ) }
+					{ __(
+						'Tip: Alt+Shift+C toggles all.',
+						'collapsi-for-gutenberg'
+					) }
 				</p>
 			</div>
 		</PluginSidebar>

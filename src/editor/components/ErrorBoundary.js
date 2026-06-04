@@ -28,7 +28,7 @@ class ErrorBoundary extends Component {
 				<div className="collapsi-error">
 					{ __(
 						'Collapsi caught a render error in this block.',
-						'collapsi'
+						'collapsi-for-gutenberg'
 					) }
 				</div>
 			);

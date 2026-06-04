@@ -15,7 +15,7 @@
     "test": "wp-scripts test-unit-js",
     "test:e2e": "wp-scripts test-playwright",
     "packages-update": "wp-scripts packages-update",
-    "makepot": "wp i18n make-pot . languages/collapsi.pot --slug=collapsi-for-gutenberg --domain=collapsi"
+    "makepot": "wp i18n make-pot . languages/collapsi-for-gutenberg.pot --slug=collapsi-for-gutenberg --domain=collapsi-for-gutenberg"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.1",

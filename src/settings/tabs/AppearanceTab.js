@@ -11,10 +11,10 @@ function AppearanceTab( { settings, onChange } ) {
 			<div className="collapsi-appearance__grid">
 				<BaseControl
 					id={ accentId }
-					label={ __( 'Accent color', 'collapsi' ) }
+					label={ __( 'Accent color', 'collapsi-for-gutenberg' ) }
 					help={ __(
 						'Left border and icon color on collapsed blocks.',
-						'collapsi'
+						'collapsi-for-gutenberg'
 					) }
 				>
 					<ColorPicker
@@ -27,10 +27,10 @@ function AppearanceTab( { settings, onChange } ) {
 				</BaseControl>
 				<BaseControl
 					id={ textId }
-					label={ __( 'Bar title color', 'collapsi' ) }
+					label={ __( 'Bar title color', 'collapsi-for-gutenberg' ) }
 					help={ __(
 						'Block title text in the collapsed bar.',
-						'collapsi'
+						'collapsi-for-gutenberg'
 					) }
 				>
 					<ColorPicker
@@ -44,7 +44,7 @@ function AppearanceTab( { settings, onChange } ) {
 			</div>
 			<div className="collapsi-appearance__preview">
 				<span className="collapsi-appearance__preview-label">
-					{ __( 'Live preview', 'collapsi' ) }
+					{ __( 'Live preview', 'collapsi-for-gutenberg' ) }
 				</span>
 				<div
 					className="collapsi-appearance__preview-bar"
@@ -54,12 +54,12 @@ function AppearanceTab( { settings, onChange } ) {
 					} }
 				>
 					<span className="collapsi-appearance__preview-title">
-						{ __( 'Heading', 'collapsi' ) }
+						{ __( 'Heading', 'collapsi-for-gutenberg' ) }
 					</span>
 					<span className="collapsi-appearance__preview-text">
 						{ __(
 							'— first chars of the collapsed block.',
-							'collapsi'
+							'collapsi-for-gutenberg'
 						) }
 					</span>
 				</div>

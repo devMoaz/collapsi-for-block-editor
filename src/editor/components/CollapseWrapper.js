@@ -93,7 +93,9 @@ const withCollapse = createHigherOrderComponent( ( BlockListBlock ) => {
 					props.name
 				);
 				const typeTitle =
-					blockType?.title || props.name || __( 'Block', 'collapsi' );
+					blockType?.title ||
+					props.name ||
+					__( 'Block', 'collapsi-for-gutenberg' );
 				return {
 					isRootBlock: isRoot,
 					isExcluded: excluded,
@@ -120,12 +122,12 @@ const withCollapse = createHigherOrderComponent( ( BlockListBlock ) => {
 				nextCollapsed
 					? sprintf(
 							/* translators: %s is the block name. */
-							__( '%s collapsed.', 'collapsi' ),
+							__( '%s collapsed.', 'collapsi-for-gutenberg' ),
 							announcementLabel
 					  )
 					: sprintf(
 							/* translators: %s is the block name. */
-							__( '%s expanded.', 'collapsi' ),
+							__( '%s expanded.', 'collapsi-for-gutenberg' ),
 							announcementLabel
 					  ),
 				'polite'

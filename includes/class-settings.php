@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 final class Settings {
 
 	public const OPTION_NAME   = 'collapsi_options';
-	public const OPTION_GROUP  = 'collapsi';
+	public const OPTION_GROUP  = 'collapsi-for-gutenberg';
 	public const ALLOWED_MODES = array( 'never', 'all' );
 
 	/**
