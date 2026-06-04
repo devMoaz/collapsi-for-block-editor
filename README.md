@@ -1,8 +1,8 @@
-# Collapsi for Gutenberg Blocks
+# Collapsi for the Block Editor
 
 > Editor-only collapse/expand for every Gutenberg block. Tame long posts and templates without losing your place.
 
-Collapsi for Gutenberg Blocks adds a chevron toggle to every top-level block in the WordPress editor. Hover, click, and the block tucks into a 40-px bar showing its icon, title, and a short content preview. The collapsed state is saved per-post in `localStorage`, so it survives page reloads. Strictly editor-only — your published site is untouched.
+Collapsi for the Block Editor adds a chevron toggle to every top-level block in the WordPress editor. Hover, click, and the block tucks into a 40-px bar showing its icon, title, and a short content preview. The collapsed state is saved per-post in `localStorage`, so it survives page reloads. Strictly editor-only — your published site is untouched.
 
 ## Features
 
@@ -21,16 +21,16 @@ Collapsi for Gutenberg Blocks adds a chevron toggle to every top-level block in 
 Easiest path — from the WordPress.org plugin directory:
 
 1. `Plugins → Add New` in wp-admin
-2. Search for "Collapsi for Gutenberg Blocks"
+2. Search for "Collapsi for the Block Editor"
 3. Install + Activate
 
-Or grab the latest release zip from this repo's [Releases](https://github.com/devMoaz/collapsi-for-gutenberg/releases) page and upload via `Plugins → Add New → Upload Plugin`.
+Or grab the latest release zip from this repo's [Releases](https://github.com/devMoaz/collapsi-for-block-editor/releases) page and upload via `Plugins → Add New → Upload Plugin`.
 
 ## Try it without installing
 
 Open the WordPress Playground with the plugin pre-installed and a demo post seeded:
 
-[Open in Playground →](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/devMoaz/collapsi-for-gutenberg/main/_playground/blueprint.json)
+[Open in Playground →](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/devMoaz/collapsi-for-block-editor/main/_playground/blueprint.json)
 
 ## Development
 

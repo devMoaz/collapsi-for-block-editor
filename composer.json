@@ -1,5 +1,5 @@
 {
-    "name": "devmoaz/collapsi-for-gutenberg",
+    "name": "devmoaz/collapsi-for-block-editor",
     "description": "Collapse any block in the Gutenberg editor canvas.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",

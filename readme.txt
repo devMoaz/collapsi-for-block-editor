@@ -1,4 +1,4 @@
-=== Collapsi for Gutenberg Blocks ===
+=== Collapsi for the Block Editor ===
 Contributors: devmoaz
 Tags: block editor, gutenberg, productivity, ux, collapse
 Requires at least: 6.5
@@ -12,7 +12,7 @@ Editor-only collapse/expand toggle for every Gutenberg block. Tame long posts an
 
 == Description ==
 
-**Collapsi for Gutenberg Blocks** adds an editor-only chevron toggle to every Gutenberg block. Hover any top-level block, click the chevron, and the block tucks away into a compact bar showing the block's icon, title, and a short content preview (paragraph text, image alt, "5 blocks", and so on). Toggle it back open with the same chevron.
+**Collapsi for the Block Editor** adds an editor-only chevron toggle to every Gutenberg block. Hover any top-level block, click the chevron, and the block tucks away into a compact bar showing the block's icon, title, and a short content preview (paragraph text, image alt, "5 blocks", and so on). Toggle it back open with the same chevron.
 
 Built for the long pages and Site Editor templates where scrolling past 50 blocks to find the one you want is the daily annoyance. Collapsi is **strictly editor-only** — your published site is untouched, no extra CSS or JS ships to the frontend.
 
@@ -47,7 +47,7 @@ The plugin hooks `editor.BlockListBlock` with a higher-order component that wrap
 = Automatic =
 
 1. Visit `Plugins → Add New` in your wp-admin
-2. Search for "Collapsi for Gutenberg Blocks"
+2. Search for "Collapsi for the Block Editor"
 3. Click `Install Now` and then `Activate`
 
 = Manual =
@@ -133,8 +133,8 @@ Just delete the plugin from `Plugins → Installed Plugins` — the plugin's opt
 
 = 1.0.0 =
 
-First public release of Collapsi for Gutenberg Blocks.
+First public release of Collapsi for the Block Editor.
 
 == Development ==
 
-Source code, issue tracker, and build instructions live at https://github.com/devMoaz/collapsi-for-gutenberg. The compiled assets in `build/` are produced by `@wordpress/scripts` (webpack) from the `src/` directory in the GitHub repository. Run `npm install && npm run build` to reproduce.
+Source code, issue tracker, and build instructions live at https://github.com/devMoaz/collapsi-for-block-editor. The compiled assets in `build/` are produced by `@wordpress/scripts` (webpack) from the `src/` directory in the GitHub repository. Run `npm install && npm run build` to reproduce.

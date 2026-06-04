@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Collapsi for Gutenberg Blocks">
-    <description>Coding standards for Collapsi for Gutenberg Blocks.</description>
+<ruleset name="Collapsi for the Block Editor">
+    <description>Coding standards for Collapsi for the Block Editor.</description>
 
     <file>collapsi-for-block-editor.php</file>
     <file>includes</file>
@@ -26,7 +26,7 @@
     <rule ref="WordPress.WP.I18n">
         <properties>
             <property name="text_domain" type="array">
-                <element value="collapsi-for-gutenberg"/>
+                <element value="collapsi-for-block-editor"/>
             </property>
         </properties>
     </rule>

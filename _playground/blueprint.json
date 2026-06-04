@@ -18,7 +18,7 @@
 			"step": "installPlugin",
 			"pluginData": {
 				"resource": "wordpress.org/plugins",
-				"slug": "collapsi-for-gutenberg"
+				"slug": "collapsi-for-block-editor"
 			},
 			"options": {
 				"activate": true
