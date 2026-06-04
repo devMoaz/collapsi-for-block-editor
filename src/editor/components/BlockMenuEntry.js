@@ -70,8 +70,14 @@ function NeverCollapseToggle( { clientId, onClose } ) {
 	return (
 		<MenuItem onClick={ onToggle }>
 			{ isExcluded
-				? __( 'Allow collapsing this block', 'collapsi-for-gutenberg' )
-				: __( 'Never collapse this block', 'collapsi-for-gutenberg' ) }
+				? __(
+						'Allow collapsing this block',
+						'collapsi-for-block-editor'
+				  )
+				: __(
+						'Never collapse this block',
+						'collapsi-for-block-editor'
+				  ) }
 		</MenuItem>
 	);
 }

@@ -5,10 +5,10 @@ function GeneralTab( { settings, onChange } ) {
 	return (
 		<>
 			<ToggleControl
-				label={ __( 'Enable Collapsi', 'collapsi-for-gutenberg' ) }
+				label={ __( 'Enable Collapsi', 'collapsi-for-block-editor' ) }
 				help={ __(
 					'Master switch. When off, no chevrons appear and no collapse state is tracked.',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				checked={ settings.enabled }
 				onChange={ ( v ) => onChange( { enabled: v } ) }
@@ -17,11 +17,11 @@ function GeneralTab( { settings, onChange } ) {
 			<ToggleControl
 				label={ __(
 					'Show content preview in collapsed bar',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				help={ __(
 					'Display a short summary (paragraph text, image alt, "N blocks", etc.) next to the block title when collapsed.',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				checked={ settings.showPreview }
 				onChange={ ( v ) => onChange( { showPreview: v } ) }
@@ -30,11 +30,11 @@ function GeneralTab( { settings, onChange } ) {
 			<ToggleControl
 				label={ __(
 					'Show block icon in collapsed bar',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				help={ __(
 					'Display the block-type icon next to the title.',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				checked={ settings.showIcon }
 				onChange={ ( v ) => onChange( { showIcon: v } ) }

@@ -29,7 +29,7 @@ function ShortcutRegistrar() {
 			category: 'block',
 			description: __(
 				'Toggle collapse/expand all top-level blocks',
-				'collapsi-for-gutenberg'
+				'collapsi-for-block-editor'
 			),
 			keyCombination: {
 				modifier: 'access',

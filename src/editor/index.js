@@ -135,7 +135,7 @@ function applySettingsToCanvas() {
 if ( typeof window !== 'undefined' ) {
 	startPersistenceLoop();
 	applySettingsToCanvas();
-	registerPlugin( 'collapsi-for-gutenberg', {
+	registerPlugin( 'collapsi', {
 		render: CollapserPlugin,
 	} );
 }

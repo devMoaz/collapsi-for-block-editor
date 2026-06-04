@@ -9,9 +9,15 @@ import BehaviourTab from './tabs/BehaviourTab';
 import AppearanceTab from './tabs/AppearanceTab';
 
 const TABS = [
-	{ name: 'general', title: __( 'General', 'collapsi-for-gutenberg' ) },
-	{ name: 'behaviour', title: __( 'Behaviour', 'collapsi-for-gutenberg' ) },
-	{ name: 'appearance', title: __( 'Appearance', 'collapsi-for-gutenberg' ) },
+	{ name: 'general', title: __( 'General', 'collapsi-for-block-editor' ) },
+	{
+		name: 'behaviour',
+		title: __( 'Behaviour', 'collapsi-for-block-editor' ),
+	},
+	{
+		name: 'appearance',
+		title: __( 'Appearance', 'collapsi-for-block-editor' ),
+	},
 ];
 
 function App() {
@@ -33,7 +39,7 @@ function App() {
 						err?.message ||
 						__(
 							'Failed to load settings.',
-							'collapsi-for-gutenberg'
+							'collapsi-for-block-editor'
 						),
 				} );
 				setLoading( false );
@@ -51,14 +57,14 @@ function App() {
 			setSettings( { ...DEFAULTS, ...saved } );
 			setNotice( {
 				status: 'success',
-				message: __( 'Settings saved.', 'collapsi-for-gutenberg' ),
+				message: __( 'Settings saved.', 'collapsi-for-block-editor' ),
 			} );
 		} catch ( err ) {
 			setNotice( {
 				status: 'error',
 				message:
 					err?.message ||
-					__( 'Save failed.', 'collapsi-for-gutenberg' ),
+					__( 'Save failed.', 'collapsi-for-block-editor' ),
 			} );
 		} finally {
 			setSaving( false );
@@ -78,8 +84,8 @@ function App() {
 			<header className="collapsi-settings__header">
 				<h1>
 					{ __(
-						'Collapsi for Gutenberg Blocks',
-						'collapsi-for-gutenberg'
+						'Collapsi for the Block Editor',
+						'collapsi-for-block-editor'
 					) }
 				</h1>
 				<Button
@@ -89,8 +95,8 @@ function App() {
 					onClick={ onSave }
 				>
 					{ saving
-						? __( 'Saving…', 'collapsi-for-gutenberg' )
-						: __( 'Save changes', 'collapsi-for-gutenberg' ) }
+						? __( 'Saving…', 'collapsi-for-block-editor' )
+						: __( 'Save changes', 'collapsi-for-block-editor' ) }
 				</Button>
 			</header>
 			{ notice && (

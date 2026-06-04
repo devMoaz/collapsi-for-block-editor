@@ -102,7 +102,7 @@ const HANDLERS = {
 		}
 		return sprintf(
 			/* translators: %d is the number of list items. */
-			_n( '%d item', '%d items', n, 'collapsi-for-gutenberg' ),
+			_n( '%d item', '%d items', n, 'collapsi-for-block-editor' ),
 			n
 		);
 	},
@@ -113,7 +113,7 @@ const HANDLERS = {
 		}
 		return sprintf(
 			/* translators: %d is the number of blocks inside a group. */
-			_n( '%d block', '%d blocks', n, 'collapsi-for-gutenberg' ),
+			_n( '%d block', '%d blocks', n, 'collapsi-for-block-editor' ),
 			n
 		);
 	},
@@ -124,7 +124,7 @@ const HANDLERS = {
 		}
 		return sprintf(
 			/* translators: %d is the number of columns. */
-			_n( '%d column', '%d columns', n, 'collapsi-for-gutenberg' ),
+			_n( '%d column', '%d columns', n, 'collapsi-for-block-editor' ),
 			n
 		);
 	},

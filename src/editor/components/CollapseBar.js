@@ -25,7 +25,7 @@ function CollapseBar( { name, clientId } ) {
 	const typeTitle =
 		blockType?.title ||
 		name ||
-		__( 'Unknown block', 'collapsi-for-gutenberg' );
+		__( 'Unknown block', 'collapsi-for-block-editor' );
 	const title = metadataName || typeTitle;
 	const icon = blockType?.icon;
 	const preview = getPreviewText( block );

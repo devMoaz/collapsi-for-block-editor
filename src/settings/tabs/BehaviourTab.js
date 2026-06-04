@@ -7,11 +7,11 @@ function BehaviourTab( { settings, onChange } ) {
 			<ToggleControl
 				label={ __(
 					'Auto-collapse all top-level blocks on editor load',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				help={ __(
 					'When enabled, every top-level block starts collapsed each time the editor opens. Per-instance "Never collapse" overrides still apply.',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 				checked={ settings.autoCollapseOnLoad === 'all' }
 				onChange={ ( checked ) =>
@@ -24,7 +24,7 @@ function BehaviourTab( { settings, onChange } ) {
 			<p className="collapsi-tab__description">
 				{ __(
 					'Tip: press Alt+Shift+C in the editor to toggle all top-level blocks. This shortcut cannot be customized in v1.',
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				) }
 			</p>
 		</>

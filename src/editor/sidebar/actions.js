@@ -50,7 +50,7 @@ export function collapseAllTopLevel( select, dispatch ) {
 					'Collapsed %d block.',
 					'Collapsed %d blocks.',
 					count,
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				),
 				count
 			),
@@ -71,7 +71,7 @@ export function expandAllTopLevel( select, dispatch ) {
 					'Expanded %d block.',
 					'Expanded %d blocks.',
 					count,
-					'collapsi-for-gutenberg'
+					'collapsi-for-block-editor'
 				),
 				count
 			),
@@ -111,11 +111,11 @@ export function focusMode( select, dispatch ) {
 	const label =
 		focused?.attributes?.metadata?.name ||
 		focused?.name ||
-		__( 'Block', 'collapsi-for-gutenberg' );
+		__( 'Block', 'collapsi-for-block-editor' );
 	speak(
 		sprintf(
 			/* translators: %s is the block name. */
-			__( 'Focus mode on. %s only.', 'collapsi-for-gutenberg' ),
+			__( 'Focus mode on. %s only.', 'collapsi-for-block-editor' ),
 			label
 		),
 		'polite'
