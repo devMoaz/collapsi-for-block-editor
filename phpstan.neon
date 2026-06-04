@@ -1,7 +1,7 @@
 parameters:
     level: 8
     paths:
-        - collapsi-for-gutenberg.php
+        - collapsi-for-block-editor.php
         - includes
         - uninstall.php
     excludePaths:

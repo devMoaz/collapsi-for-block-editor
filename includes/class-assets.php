@@ -62,7 +62,7 @@ final class Assets {
 			true
 		);
 
-		wp_set_script_translations( self::HANDLE, 'collapsi-for-gutenberg' );
+		wp_set_script_translations( self::HANDLE, 'collapsi-for-block-editor' );
 
 		wp_add_inline_script(
 			self::HANDLE,

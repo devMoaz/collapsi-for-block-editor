@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
  */
 final class Admin_Page {
 
-	public const SLUG    = 'collapsi-for-gutenberg';
+	public const SLUG    = 'collapsi-for-block-editor';
 	private const HANDLE = 'collapsi-settings';
 
 	/**
@@ -32,8 +32,8 @@ final class Admin_Page {
 	 */
 	public function add_menu_page(): void {
 		add_options_page(
-			__( 'Collapsi for Gutenberg Blocks', 'collapsi-for-gutenberg' ),
-			__( 'Collapsi', 'collapsi-for-gutenberg' ),
+			__( 'Collapsi for the Block Editor', 'collapsi-for-block-editor' ),
+			__( 'Collapsi', 'collapsi-for-block-editor' ),
 			'manage_options',
 			self::SLUG,
 			array( $this, 'render_page' )
@@ -78,7 +78,7 @@ final class Admin_Page {
 			true
 		);
 
-		wp_set_script_translations( self::HANDLE, 'collapsi-for-gutenberg' );
+		wp_set_script_translations( self::HANDLE, 'collapsi-for-block-editor' );
 
 		$style_path = COLLAPSI_DIR . 'build/settings.css';
 		if ( file_exists( $style_path ) ) {

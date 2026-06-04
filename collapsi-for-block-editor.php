@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       Collapsi for Gutenberg Blocks
- * Plugin URI:        https://github.com/devMoaz/collapsi-for-gutenberg
- * Description:       Editor-only collapse/expand toggle for every Gutenberg block. Hover a top-level block, click the chevron, and the block tucks into a compact bar with icon, title, and content preview. Survives reloads via localStorage. Works in Post Editor and Site Editor. No frontend impact.
+ * Plugin Name:       Collapsi for the Block Editor
+ * Plugin URI:        https://github.com/devMoaz/collapsi-for-block-editor
+ * Description:       Editor-only collapse/expand toggle for every block in the WordPress editor. Hover a top-level block, click the chevron, and the block tucks into a compact bar with icon, title, and content preview. Survives reloads via localStorage. Works in Post Editor and Site Editor. No frontend impact.
  * Version:           1.0.0
  * Requires at least: 6.5
  * Requires PHP:      7.4
@@ -11,7 +11,7 @@
  * Author URI:        https://www.linkedin.com/in/moazmahmmoud/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       collapsi-for-gutenberg
+ * Text Domain:       collapsi-for-block-editor
  * Domain Path:       /languages
  *
  * @package Collapsi

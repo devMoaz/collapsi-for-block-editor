@@ -2,7 +2,7 @@
 <ruleset name="Collapsi for Gutenberg Blocks">
     <description>Coding standards for Collapsi for Gutenberg Blocks.</description>
 
-    <file>collapsi-for-gutenberg.php</file>
+    <file>collapsi-for-block-editor.php</file>
     <file>includes</file>
     <file>uninstall.php</file>
 
