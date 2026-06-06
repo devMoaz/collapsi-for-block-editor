@@ -55,7 +55,10 @@ Copy-Item 'collapsi-for-block-editor.php' $stage
 Copy-Item 'readme.txt' $stage
 Copy-Item 'uninstall.php' $stage
 Copy-Item 'LICENSE' $stage
-Copy-Item 'package.json' $stage
+# NOTE: do NOT copy package.json into the dist zip for v1.0.1+. It is a
+# dev-only Node manifest with zero runtime function in a shipped plugin.
+# v1.0.0 shipped it by accident — wp.org docs explicitly say "production-
+# ready: without development tools." Future releases drop it.
 Copy-Item 'build' "$stage\build" -Recurse
 Copy-Item 'includes' "$stage\includes" -Recurse
 Copy-Item 'languages' "$stage\languages" -Recurse
