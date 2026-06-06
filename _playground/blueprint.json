@@ -17,8 +17,8 @@
 		{
 			"step": "installPlugin",
 			"pluginData": {
-				"resource": "url",
-				"url": "https://github.com/devMoaz/collapsi-for-block-editor/releases/download/v1.0.0/collapsi-for-block-editor.zip"
+				"resource": "wordpress.org/plugins",
+				"slug": "collapsi-for-block-editor"
 			},
 			"options": {
 				"activate": true
