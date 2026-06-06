@@ -17,8 +17,8 @@
 		{
 			"step": "installPlugin",
 			"pluginData": {
-				"resource": "wordpress.org/plugins",
-				"slug": "collapsi-for-block-editor"
+				"resource": "url",
+				"url": "https://downloads.wordpress.org/plugin/collapsi-for-block-editor.zip"
 			},
 			"options": {
 				"activate": true
